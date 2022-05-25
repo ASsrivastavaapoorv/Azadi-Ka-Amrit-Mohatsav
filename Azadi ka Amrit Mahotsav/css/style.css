@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+/* -----------------------------Header Part---------------------------------------- */
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-part{
+    display: flex;
+    align-items: center;
+}
+.Text a{
+    color: black !important;
+  
+}
+/* .vertical-line1{
+    color: grey !important;
+    margin-left: -11px; 
+    font-size: 13px; 
+} */
+.btn-5y{
+    border-right: 1px solid black;
+    /* height: 800px !important; */
+    margin-right: 5px;
+
+}
+.vertical-line2{
+    color: grey !important;
+    margin-left: -3px;
+    font-size: 13px;
+}
+.Icons{
+    color: #01D28E;
+    font-size: 13px;
+}
+.Icons a{
+    padding-right: 8px;  
+}
+.Line{
+    margin-top: 2px;
+}
+/* ------------------------------Banner---------- */
+.images-left{
+    display: flex;
+}
+.images-right{
+    display: flex;
+}
+.center-text{
+    color: #2D3E50;
+}
+/* ------------------------Navbar Part ---------------- */
+
+nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+/* ---------------------Wallpaper Part------------- */
+#Wallpaper-Icons{
+   background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/18.jpg);
+   height: 550px; 
+   background-size: cover;
+   padding: 80px 0 80px 0;
+   margin-top: -16px;
+   width: 100%;
+   }
+.Wallpaper-Text{
+   text-align:center;
+}
+.Wallpaper-Text h4{
+    color: beige;
+    font-family: initial;
+    font-size: 26px;
+}
+/* ------------------------Images Part ------------- */
+.Images{ 
+    
+    /* padding:50px 100px; */
+    margin-top: -100px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 7px rgba(0, 0,0,0.2); 
+}
+.Modiji_img img{
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 7px;
+}
+.Modiji_img h5{
+    margin-top: 10px;
+    margin-left: 22px;
+}
+.Modiji_img h6{
+    /* margin-top: 30px; */
+    margin-left: 22px;
+}
+.Ashwini-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.Ashwini-img img{
+    border: 2px solid #dee2e6;
+    padding:0.25rem;
+    border-radius: 3px;
+}
+.Ashwini-text{
+   margin-left: 10px;
+   line-height: 0.6;
+}
+.Ashwini-text h6{
+    font-weight: 700;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.Ashwini-text p{
+    font-size: 19px;
+}
+
+.Raosaheb-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.Raosaheb-img img{
+    border: 1px solid #dee2e6;
+    padding:0.25rem;
+}
+.Raosaheb-text{
+    margin-left: 10px;
+    line-height: 0.6;
+ }
+.Raosaheb-text h6{
+    font-weight: 700;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.Raosaheb-text p{
+    font-size: 19px;
+}
+
+.Darshana-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.Darshana-img img{
+    border: 1px solid #dee2e6;
+    padding:0.25rem;
+}
+.Darshana-text{
+    margin-left: 10px;
+    line-height: 0.6;
+ }
+.Darshana-text h6{
+    font-weight: 700;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.Darshana-text p{
+    font-size: 19px;
+}
+
+.line-1{
+    margin-top: -10px !important;
+    width: 450px;
+}
+.Azadi-mahotsav img{
+    height: 260px !important;
+    border-radius: 134px;
+    margin-left: -82px;
+    margin-top: 47px;
+    
+}
+/* ---------------------Grid----------------------- */
+.project-part{
+    margin-bottom: 60px;
+}
+.main h1{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 47px;
+}
+.need-image img{
+    width: 100%;
+    border: 2px solid #dee2e6;
+    padding:0.25rem;
+    height: 304px !important;
+}
+.need-text p{
+    font-size: 20px;
+    margin-top: 36px;
+}
+/* --------------------------footer------------- */
+#footer{
+    background-color:#252525 ;
+}
+.footer-heading h4{
+    color: white;
+    padding-top: 15px;
+}
+.Icon{
+    color: white;
+}
+.footer-text1{
+    display: flex;
+    color: white;
+    padding-top: 8px;
+}
+.footerhead1-text{
+    margin-left: 30px;
+}
+.footer-text2{
+    display: flex;
+    color: white;
+}
+.footerhead2-text{
+    margin-left: 30px;
+}
+ .line3{
+   border: 0.5px solid #fff;
+}
+.bottom-part h5{
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 18px;
+}
+/* --------------------------- Scroll Back to Top ------- */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
